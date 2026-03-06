@@ -27,9 +27,11 @@ const fs = require('fs');
     // Wait a bit extra for fonts and ambient particles to render
     await new Promise(r => setTimeout(r, 2000));
 
-    // 4. We know there are 11 sections based on our App.jsx
-    // .hero, .chapter-section
-    const sectionCount = 11;
+    // 4. Dynamically count sections
+    const sectionCount = await page.evaluate(() => {
+        return document.querySelectorAll('.hero, .chapter-section').length;
+    });
+    console.log(`Detected ${sectionCount} sections.`);
 
     // Click on the body to ensure keyboard focus is on the document
     await page.click('body');

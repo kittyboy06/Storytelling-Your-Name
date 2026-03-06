@@ -2,16 +2,16 @@ import { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollAnimation';
 
 const photos = [
-    { src: 'images/gallery/gallery-1.jpg', alt: 'Mitsuha and Taki face writing', top: '5%', left: '5%', width: '25%', rotate: '-8deg', zIndex: 1 },
-    { src: 'images/gallery/gallery-2.jpg', alt: 'Mitsuha and Taki back to back', top: '10%', left: '35%', width: '30%', rotate: '4deg', zIndex: 2 },
-    { src: 'images/gallery/gallery-3.jpg', alt: 'Falling through twilight', top: '5%', left: '70%', width: '22%', rotate: '-12deg', zIndex: 3 },
-    { src: 'images/gallery/gallery-4.jpg', alt: 'Tokyo stairs', top: '40%', left: '2%', width: '20%', rotate: '6deg', zIndex: 4 },
-    { src: 'images/gallery/gallery-5.png', alt: 'Train in Itomori', top: '35%', left: '25%', width: '28%', rotate: '-5deg', zIndex: 5 },
-    { src: 'images/gallery/gallery-6.jpg', alt: 'Comet splitting sky', top: '42%', left: '55%', width: '35%', rotate: '8deg', zIndex: 6 },
-    { src: 'images/gallery/gallery-7.jpg', alt: 'Tokyo cityscape', top: '65%', left: '8%', width: '26%', rotate: '-10deg', zIndex: 7 },
-    { src: 'images/gallery/gallery-8.jpg', alt: 'Your Name promo art', top: '65%', left: '40%', width: '22%', rotate: '12deg', zIndex: 8 },
-    { src: 'images/gallery/gallery-9.jpg', alt: 'Taki looking at stairs', top: '55%', left: '75%', width: '22%', rotate: '-6deg', zIndex: 9 },
-    { src: 'images/gallery/gallery-10.jpg', alt: 'Falling comet sky', top: '75%', left: '65%', width: '30%', rotate: '3deg', zIndex: 10 }
+    { src: 'images/gallery/gallery-1.jpg', alt: 'Mitsuha and Taki face writing', top: '15%', left: '15%', width: '25%', rotate: '-8deg', zIndex: 1 },
+    { src: 'images/gallery/gallery-2.jpg', alt: 'Mitsuha and Taki back to back', top: '20%', left: '45%', width: '30%', rotate: '4deg', zIndex: 2 },
+    { src: 'images/gallery/gallery-3.jpg', alt: 'Falling through twilight', top: '15%', left: '80%', width: '22%', rotate: '-12deg', zIndex: 3 },
+    { src: 'images/gallery/gallery-4.jpg', alt: 'Tokyo stairs', top: '48%', left: '12%', width: '20%', rotate: '6deg', zIndex: 4 },
+    { src: 'images/gallery/gallery-5.png', alt: 'Train in Itomori', top: '42%', left: '38%', width: '28%', rotate: '-5deg', zIndex: 5 },
+    { src: 'images/gallery/gallery-6.jpg', alt: 'Comet splitting sky', top: '48%', left: '68%', width: '35%', rotate: '8deg', zIndex: 6 },
+    { src: 'images/gallery/gallery-7.jpg', alt: 'Tokyo cityscape', top: '78%', left: '18%', width: '26%', rotate: '-10deg', zIndex: 7 },
+    { src: 'images/gallery/gallery-8.jpg', alt: 'Your Name promo art', top: '75%', left: '50%', width: '22%', rotate: '12deg', zIndex: 8 },
+    { src: 'images/gallery/gallery-9.jpg', alt: 'Taki looking at stairs', top: '68%', left: '85%', width: '22%', rotate: '-6deg', zIndex: 9 },
+    { src: 'images/gallery/gallery-10.jpg', alt: 'Falling comet sky', top: '85%', left: '78%', width: '30%', rotate: '3deg', zIndex: 10 }
 ];
 
 export default function SinglePageGallery() {
