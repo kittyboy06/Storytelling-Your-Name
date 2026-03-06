@@ -16,22 +16,22 @@ export default function App() {
   // Arrow key navigation to strictly snap between sections
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Only hijack standard ArrowDown/ArrowUp, not when users are typing in inputs (though we have none)
-      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      // Hijack standard ArrowDown/Up and ArrowRight/Left for presentation navigation
+      if (['ArrowDown', 'ArrowUp', 'ArrowRight', 'ArrowLeft'].includes(e.key)) {
         const sections = Array.from(document.querySelectorAll('.hero, .chapter-section'));
         if (!sections.length) return;
 
         // Give a slight buffer to avoid rounding errors
         const threshold = 10;
 
-        if (e.key === 'ArrowDown') {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
           // Find the first section whose top is strictly below the current viewport top
           const next = sections.find(el => el.getBoundingClientRect().top > threshold);
           if (next) {
             e.preventDefault();
             next.scrollIntoView({ behavior: 'smooth' });
           }
-        } else if (e.key === 'ArrowUp') {
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
           // Find the last section whose top is strictly above the current viewport top
           const prev = [...sections].reverse().find(el => el.getBoundingClientRect().top < -threshold);
           if (prev) {
