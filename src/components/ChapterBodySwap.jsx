@@ -18,7 +18,7 @@ export default function ChapterBodySwap() {
                     <div className="split-hero">
                         <div className="split-hero-side">
                             <div className="split-hero-overlay-left" />
-                            <img src="/images/mitsuha-anime.png" alt="Mitsuha Miyamizu - Itomori" style={{ objectPosition: 'center 20%' }} />
+                            <img src="images/mitsuha-anime.png" alt="Mitsuha Miyamizu - Itomori" style={{ objectPosition: 'center 20%' }} />
                             <div className="split-hero-label" style={{ left: '2rem' }}>
                                 <span style={{ background: 'var(--primary)', padding: '0.25rem 0.75rem', borderRadius: '9999px', fontSize: '0.625rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.2em', display: 'inline-block', marginBottom: '0.5rem' }}>
                                     Location: Itomori
@@ -28,7 +28,7 @@ export default function ChapterBodySwap() {
                         </div>
                         <div className="split-hero-side">
                             <div className="split-hero-overlay-right" />
-                            <img src="/images/taki-anime.jpg" alt="Taki Tachibana - Tokyo" style={{ objectPosition: 'center 30%' }} />
+                            <img src="images/taki-anime.jpg" alt="Taki Tachibana - Tokyo" style={{ objectPosition: 'center 30%' }} />
                             <div className="split-hero-label" style={{ right: '2rem', textAlign: 'right' }}>
                                 <span style={{ background: 'var(--primary)', padding: '0.25rem 0.75rem', borderRadius: '9999px', fontSize: '0.625rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.2em', display: 'inline-block', marginBottom: '0.5rem' }}>
                                     Location: Tokyo
@@ -68,7 +68,7 @@ export default function ChapterBodySwap() {
 
                                 {/* Visual: Character link */}
                                 <div style={{ marginTop: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem' }}>
-                                    <CharAvatar label="CHARACTER_ID: 02" image="/images/mitsuha-anime.png" />
+                                    <CharAvatar label="CHARACTER_ID: 02" image="images/mitsuha-anime.png" />
                                     <div style={{ position: 'relative', width: '8rem', height: '1px', background: 'var(--primary)' }}>
                                         <div style={{
                                             position: 'absolute', top: '-0.875rem', left: '50%', transform: 'translateX(-50%)',
@@ -77,7 +77,7 @@ export default function ChapterBodySwap() {
                                             fontSize: '0.625rem', color: 'var(--primary)', fontWeight: 700, whiteSpace: 'nowrap',
                                         }}>SWAP_LOG</div>
                                     </div>
-                                    <CharAvatar label="CHARACTER_ID: 01" image="/images/taki-anime.jpg" />
+                                    <CharAvatar label="CHARACTER_ID: 01" image="images/taki-anime.jpg" />
                                 </div>
                             </div>
 

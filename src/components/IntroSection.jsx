@@ -37,7 +37,7 @@ export default function IntroSection() {
                             {/* Image grid */}
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                                 <div style={{ position: 'relative', aspectRatio: '3/4', borderRadius: '1rem', overflow: 'hidden', border: '1px solid var(--slate-800)' }}>
-                                    <img src="/images/tokyo.png" alt="Tokyo at night" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                                    <img src="images/tokyo.png" alt="Tokyo at night" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
                                         onMouseOver={e => e.currentTarget.style.transform = 'scale(1.1)'}
                                         onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
                                     />
@@ -49,7 +49,7 @@ export default function IntroSection() {
                                 </div>
 
                                 <div style={{ position: 'relative', aspectRatio: '3/4', borderRadius: '1rem', overflow: 'hidden', border: '1px solid var(--slate-800)', marginTop: '3rem' }}>
-                                    <img src="/images/itomori-anime.jpg" alt="Itomori countryside" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                                    <img src="images/itomori-anime.jpg" alt="Itomori countryside" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
                                         onMouseOver={e => e.currentTarget.style.transform = 'scale(1.1)'}
                                         onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
                                     />

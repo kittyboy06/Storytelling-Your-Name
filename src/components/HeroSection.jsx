@@ -7,7 +7,7 @@ export default function HeroSection() {
         <section className="hero" id="hero">
             {/* Background image */}
             <div className="hero-bg">
-                <img src="/images/hero-comet-anime.jpg" alt="Comet Tiamat streaking across the night sky over Itomori" />
+                <img src="images/hero-comet-anime.jpg" alt="Comet Tiamat streaking across the night sky over Itomori" />
                 <div className="hero-overlay" />
                 {/* Animated dot grid overlay */}
                 <div style={{
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <h1 className="hero-title">
                     Narrating Fate through{' '}
                     <br />
-                    <span className="gradient-text">Data Structures</span>
+                    <span className="gradient-text">ER Diagram</span>
                 </h1>
 
                 <p className="hero-subtitle">
