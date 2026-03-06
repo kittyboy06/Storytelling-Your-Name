@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Name: An ER-Diagram Odyssey</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1132d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101322",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
+<!-- Navigation -->
+<header class="fixed top-0 z-50 w-full border-b border-primary/20 bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">hub</span>
+<h2 class="text-slate-100 text-lg font-bold tracking-tight hidden sm:block">ER-Diagram Odyssey</h2>
+</div>
+<nav class="flex items-center gap-6 md:gap-10">
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">The Story</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">ER Model</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Schema</a>
+<button class="bg-primary hover:bg-primary/80 text-white text-sm font-bold py-2 px-6 rounded-lg transition-all">
+                        Launch
+                    </button>
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<main class="flex-1">
+<section class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+<!-- Atmospheric Background -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background-dark/40 to-background-dark"></div>
+<div class="absolute inset-0 opacity-30 bg-[radial-gradient(#1132d4_1px,transparent_1px)] [background-size:40px_40px]"></div>
+<div class="w-full h-full bg-center bg-cover" data-alt="Cinematic night sky with a bright comet splitting the horizon" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-OjFYKypPswHoL-IQWJZfrhfvR0RCxAatVJViCsON1lEMkNbdfWMEgPcFgme0DcYY8K3Qk8AwcRpZjp3Hu7aWjDGjTOKSMsctUxMdAKzCiIE4k5R5onIYtQWcAha7ZQ7cXo_HsGBdDk32RLzO1cBrLWpnzVRb1jg8pNhWF6KeDR8egIBaZEwCSa7z8mihL2xuxYWnrSZo09LTWyt_nXl6OgSRwt_6kxtU74zNW_KY06C3OHhnJk4RaIQ5d2vXycQfEBIfCdwkhHeX')">
+</div>
+</div>
+<!-- Floating Data Elements (Stylized CSS) -->
+<div class="absolute top-1/4 left-1/4 w-32 h-32 border border-primary/30 rounded-lg -rotate-12 backdrop-blur-sm hidden lg:block"></div>
+<div class="absolute bottom-1/3 right-1/4 w-48 h-48 border border-primary/20 rounded-full backdrop-blur-sm hidden lg:block"></div>
+<div class="relative z-10 max-w-4xl mx-auto mt-20">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary uppercase bg-primary/10 rounded-full border border-primary/20">
+                        A Technical Narrative Experience
+                    </span>
+<h1 class="text-slate-100 text-5xl md:text-7xl font-black leading-tight tracking-tight mb-8">
+                        Narrating Fate through <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Data Structures</span>
+</h1>
+<p class="text-slate-300 text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed mb-10">
+                        A technical exploration of Makoto Shinkai's masterpiece, mapping the emotional connections of Mitsuha and Taki into a rigorous Entity-Relationship model.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto min-w-[200px] h-14 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                            Start the Story
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full sm:w-auto min-w-[200px] h-14 border border-slate-700 text-slate-100 rounded-xl font-bold text-lg hover:bg-slate-800 transition-colors">
+                            View ER-Model
+                        </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500">
+<span class="text-[10px] uppercase tracking-[0.3em] font-bold">Scroll to Explore</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Split Landscape Section -->
+<section class="py-24 px-6 bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h2 class="text-3xl md:text-4xl font-bold text-slate-100">The Architecture of Connection</h2>
+<p class="text-slate-400 leading-relaxed text-lg">
+                                Deep dive into the database schema of destiny. We translate ethereal bonds into structured entities, exploring how time, memory, and identity are indexed across two different worlds.
+                            </p>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10">
+<span class="material-symbols-outlined text-primary">schema</span>
+<div>
+<h4 class="font-bold text-slate-200">Temporal Synchronization</h4>
+<p class="text-sm text-slate-500">Managing multi-temporal state persistence between Tokyo and Itomori.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="group relative aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Futuristic neon city lights of Tokyo at night" data-location="Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkLZOp4mgCKCkh7yNWCsPHYlrGOpkbzFR02kc4w6f8dnUsr9hENBq2UreRpzQ3PSO-qEpKYzUjACT2MZhFbC8ZYEpj2u1xH_W02senRlSslErFl465eQsRpc-TI6_yxdxme2dvQOpYoRY1rVcXinUTz0--p_CzXrU7Z4LyRBUwfd5jGFPn6YDpVpgidIDg_cUnybZfzAEmzB90RJm5PzIWg3jpL5_-9jgbuetvLGKCHI29rRFstxTiLSFUN3BxGf9AfNM9HX9du_18"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-xs font-bold text-primary tracking-widest uppercase">Node A</p>
+<h3 class="text-lg font-bold text-white">Tokyo Urban</h3>
+</div>
+</div>
+<div class="group relative aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 mt-12">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Peaceful rural Japanese landscape with mountains" data-location="Itomori" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNxk2gKI2Qpx_7eceQi5NWr3V9_xEN-Blb9SgQoQbojnyCluh_0lrt5EKMOSyb0XhrDbWeHiAKKAAy770qppPx4WwoK7074JCufu3EdeGROQT8jBJbkYSo72y-cE0xTI5zOZEfHVzZSpIDM6QIBlqgQs8-EPDoNYWpzKmc1OG_on_TsSMRbmZHqhDfTm9nQI6gYr_xHW2UUytaqFdwgH2aJRsNU37rQHPPCy3JNAipH00BRlmoyVery6hP2xp7p8ythnT1QD1OuMSZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-xs font-bold text-primary tracking-widest uppercase">Node B</p>
+<h3 class="text-lg font-bold text-white">Itomori Rural</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Nodes Section -->
+<section class="py-24 px-6 border-t border-slate-800/50">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold text-slate-100 mb-4">Core Entities</h2>
+<p class="text-slate-500">The primary components of our existential database.</p>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white">person</span>
+</div>
+<h3 class="text-xl font-bold text-slate-100 mb-2">Subject Entities</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Defining the attributes of Taki and Mitsuha: name, location_id, timestamp_offset, and soul_integrity.</p>
+</div>
+<div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white">link</span>
+</div>
+<h3 class="text-xl font-bold text-slate-100 mb-2">Musubi Relationship</h3>
+<p class="text-slate-400 text-sm leading-relaxed">The many-to-many join table connecting souls across timelines through the 'Red String' foreign key.</p>
+</div>
+<div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-primary/50 transition-colors group">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white">history</span>
+</div>
+<h3 class="text-xl font-bold text-slate-100 mb-2">Temporal Logs</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Audit trails of swapped experiences, stored as ephemeral cache data that degrades over time.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-slate-800 py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">database</span>
+<span class="text-slate-400 text-sm font-medium">An ER-Diagram Odyssey © 2024</span>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Documentation</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">API Reference</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

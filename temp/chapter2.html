@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Name ER-Diagram | Body Swap Dynamics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1132d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101322",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(17, 50, 212, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(17, 50, 212, 0.2);
+        }
+        .tokyo-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #1132d4 100%);
+        }
+        .itomori-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #4338ca 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex flex-col w-full min-h-screen overflow-x-hidden">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 bg-background-dark/80 sticky top-0 z-50 px-6 py-3 backdrop-blur-md">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<span class="material-symbols-outlined text-3xl">database</span>
+</div>
+<h2 class="text-slate-100 text-lg font-bold leading-tight tracking-tight">Kimi No Na Wa <span class="text-primary/80 font-medium">DB_LOG</span></h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Dashboard</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="#">Body Swap</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Logs</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Timeline</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<label class="hidden sm:flex items-center bg-primary/10 rounded-lg px-3 py-1.5 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm text-slate-100 placeholder:text-slate-500 w-48" placeholder="Search entities..."/>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/20 text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/20 text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Contrast Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 h-64 md:h-80 relative overflow-hidden">
+<div class="relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Bustling Tokyo cityscape at night with neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1mIcVBXRRfhAQ91KAlYUpLJtdyIKoo7CWbdKUUs0zimNPxROZwyPZj0I1TDgnFqbtgxVK2VMb9_xsL-v-BtIaY7vIxSP3WCkPmya7v9fSDQJR1wkyy3qXX_LW_By_ffjYDCKXPpWLcfkUcv0I9pgKju6koiPhsfpALH9AyqJUgYkb3BSQUqbLL88hoybuP9vX6AJeohG1ToezSnXYfhXg0TibBe8f7TkDbOddt-K_shAT2KOXZFx3tGR-efF5VioapZ9SNf39cINt"/>
+<div class="absolute bottom-6 left-8 z-20">
+<span class="bg-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white mb-2 inline-block">Location: Tokyo</span>
+<h1 class="text-3xl font-bold text-white">Taki Tachibana</h1>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-l from-background-dark via-transparent to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Serene Japanese countryside with mountains and lake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA56Drv0OF9MBooXh8ZHk6gFcEiwiJ7Ks80RoiAFsnrxzs5qT94Iy4FIH7Bl0wgqtrEq6XLdAfhAZjn9LdYJMrdwMHnQj3slV-7qdmHgS-x8Qr44T9j9equitfG-Spgutm813chQUnjwJcQqDCdM2qZ-KyFQa0q9MKNEAUMbSjvlpdt4tdiUHLY1LjrIUygKgc-RXf7nHpsNwkM6cxipPrijF6TgkTk-1Zbve75Mawaw23pOO_gwDc700_XaNw6-L1Gtnf-c7x0-I7F"/>
+<div class="absolute bottom-6 right-8 z-20 text-right">
+<span class="bg-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white mb-2 inline-block">Location: Itomori</span>
+<h1 class="text-3xl font-bold text-white">Mitsuha Miyamizu</h1>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none z-30">
+<div class="h-full w-px bg-primary/50 shadow-[0_0_15px_rgba(17,50,212,0.5)]"></div>
+<div class="absolute bg-background-dark border-2 border-primary rounded-full p-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl animate-pulse">sync_alt</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 py-12">
+<!-- Section 1: The Body Swap (M:N Relationship) -->
+<div class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">conversion_path</span>
+<h2 class="text-2xl font-bold tracking-tight">Section 1: The Body Swap <span class="text-primary/60 font-medium text-lg ml-2">(M:N Relationship)</span></h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 glass-panel p-8 rounded-xl">
+<h3 class="text-slate-300 font-semibold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">analytics</span> Relationship Attributes
+                            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-primary/10 border border-primary/20 p-6 rounded-lg">
+<div class="flex items-center justify-between mb-4">
+<p class="text-primary font-bold text-sm uppercase tracking-wider">Swap_Date</p>
+<span class="material-symbols-outlined text-primary/60">calendar_today</span>
+</div>
+<p class="text-2xl font-display font-light">Intermittent</p>
+<p class="text-slate-400 text-xs mt-2">Frequency: 2-3 times per week</p>
+</div>
+<div class="bg-primary/10 border border-primary/20 p-6 rounded-lg">
+<div class="flex items-center justify-between mb-4">
+<p class="text-primary font-bold text-sm uppercase tracking-wider">Duration</p>
+<span class="material-symbols-outlined text-primary/60">timer</span>
+</div>
+<p class="text-2xl font-display font-light">Until Sleep</p>
+<p class="text-slate-400 text-xs mt-2">Trigger: REM Cycle Synch</p>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-center">
+<div class="flex items-center gap-12">
+<div class="flex flex-col items-center">
+<div class="size-16 rounded-full border-2 border-primary overflow-hidden mb-2">
+<img class="w-full h-full object-cover" data-alt="Avatar profile for Taki" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQDLzbkI8XCRVeHc3ZmcJTYHhQdu1ayzrwpLcyGXxo1lCwqJ-YiJJgpaFbkrpKjSci5lOIrFvKviOWp2kUkZ_o5TkTQwHPVJ58ZLnl_yLFgRU6wM8aVAVZy98Iuf-oJ96-eSGMB1UEUv55YsupUoCftDEbVddYacU9rYNAlu7yrYi_G_RTV24ZJRZ7FYAnMF7d3qNeENOomFefw7eDV3Q0HL8X2LwaJYeCMkJoVJl8O8YYJ96jZcQrgJqNnuaG48GuAhzI-Z2IiHLM"/>
+</div>
+<span class="text-xs font-bold text-slate-400">CHARACTER_ID: 01</span>
+</div>
+<div class="relative flex-1 h-px bg-primary w-32">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-background-dark px-3 py-1 border border-primary rounded text-[10px] text-primary font-bold">SWAP_LOG</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="size-16 rounded-full border-2 border-primary overflow-hidden mb-2">
+<img class="w-full h-full object-cover" data-alt="Avatar profile for Mitsuha" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUSb-MhuLd8afnwDM6qxr4J_ZsVwTg1ujIh193UH_v7DPIznlswRgLpLeTWap1myygzNAc3c-JACgOPka-aqmRYSa8Zxw9CFUML3EuPe2kR7xlKqRumfcc1xPDOmCpUZ1AowbQ33s8N1WnoaH_HECw__tw1Q2rw4PCwt3zz_aR05CxqC2Wqo2Y2l_mLSWicZrfhFQJYJ3_gOut1qiow5jvQfpiDgEG6EEAt9Lcup70g_gTe7slbptMQVGuK4B910vkLyuzmUYe3Ndk"/>
+</div>
+<span class="text-xs font-bold text-slate-400">CHARACTER_ID: 02</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-900/50 border border-slate-800 p-8 rounded-xl flex flex-col justify-center">
+<h3 class="text-slate-100 font-bold mb-4">Logic Constraints</h3>
+<ul class="space-y-4">
+<li class="flex gap-3 text-sm text-slate-400">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Must be simultaneous across character entities.</span>
+</li>
+<li class="flex gap-3 text-sm text-slate-400">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Memory loss occurs upon disconnection.</span>
+</li>
+<li class="flex gap-3 text-sm text-slate-400">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Attributes "Swap_Date" and "Duration" stored in associative entity.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Section 2: Communication Logs (Message Entity) -->
+<div class="mb-16">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">chat</span>
+<h2 class="text-2xl font-bold tracking-tight">Section 2: Communication Logs <span class="text-primary/60 font-medium text-lg ml-2">(Message Entity)</span></h2>
+</div>
+<button class="bg-primary/20 hover:bg-primary text-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">filter_alt</span> Filter Logs
+                        </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Message Card 1 -->
+<div class="glass-panel p-6 rounded-xl border-l-4 border-l-primary relative overflow-hidden group">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-primary/30 text-primary px-2 py-0.5 rounded text-[10px] font-bold">ID: MSG_882</span>
+<span class="text-slate-500 text-[10px] font-bold">2013-09-02</span>
+</div>
+<p class="text-slate-100 mb-6 font-display italic">"Don't change my social life while you're in my body! Also, why do you keep buying so much cake?"</p>
+<div class="flex items-center justify-between text-xs text-slate-400 border-t border-primary/10 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">smartphone</span>
+<span>iPhone Note</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>21:30</span>
+</div>
+</div>
+</div>
+<!-- Message Card 2 -->
+<div class="glass-panel p-6 rounded-xl border-l-4 border-l-indigo-500 relative overflow-hidden">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-indigo-500/30 text-indigo-400 px-2 py-0.5 rounded text-[10px] font-bold">ID: MSG_901</span>
+<span class="text-slate-500 text-[10px] font-bold">2016-09-05</span>
+</div>
+<p class="text-slate-100 mb-6 font-display italic">"The cafe in Tokyo was amazing. I hope you don't mind that I spent some of your allowance."</p>
+<div class="flex items-center justify-between text-xs text-slate-400 border-t border-primary/10 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+<span>Diary Entry</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>23:15</span>
+</div>
+</div>
+</div>
+<!-- Message Card 3 -->
+<div class="glass-panel p-6 rounded-xl border-l-4 border-l-primary relative overflow-hidden">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-primary/30 text-primary px-2 py-0.5 rounded text-[10px] font-bold">ID: MSG_944</span>
+<span class="text-slate-500 text-[10px] font-bold">2013-09-12</span>
+</div>
+<p class="text-slate-100 mb-6 font-display italic">"IMPORTANT: Avoid the festival tonight. There is something you need to know about the comet."</p>
+<div class="flex items-center justify-between text-xs text-slate-400 border-t border-primary/10 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">ink_marker</span>
+<span>Skin Note</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>18:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Element: Mini ER-Diagram snippet -->
+<div class="mt-20">
+<div class="bg-primary/5 rounded-2xl border border-primary/30 p-10 overflow-hidden relative">
+<div class="absolute -right-20 -top-20 size-80 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="absolute -left-20 -bottom-20 size-80 bg-indigo-500/10 blur-[100px] rounded-full"></div>
+<div class="relative z-10 text-center mb-12">
+<h3 class="text-xl font-bold mb-2">Schema Snippet: Relational Logic</h3>
+<p class="text-slate-400 text-sm">Visualizing the flow of data between characters and events</p>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24">
+<!-- Character Entity -->
+<div class="flex flex-col items-center gap-4">
+<div class="bg-primary/20 border-2 border-primary px-8 py-6 rounded shadow-[0_0_20px_rgba(17,50,212,0.2)] min-w-[160px]">
+<p class="text-primary font-black text-center text-lg">CHARACTER</p>
+<div class="mt-2 h-px bg-primary/30 w-full"></div>
+<p class="text-[10px] text-slate-300 mt-2 text-center uppercase tracking-tighter">Char_ID (PK)<br/>Name<br/>Location</p>
+</div>
+</div>
+<!-- Connections Container -->
+<div class="flex flex-col gap-12">
+<!-- Body Swap Connection -->
+<div class="flex items-center gap-4 group cursor-help">
+<div class="h-px w-8 bg-primary"></div>
+<div class="rotate-45 size-20 border-2 border-slate-500 flex items-center justify-center group-hover:border-primary transition-colors">
+<div class="-rotate-45 text-[10px] font-bold text-slate-100">BODY_SWAP</div>
+</div>
+<div class="h-px w-8 bg-primary"></div>
+</div>
+<!-- Sends Connection -->
+<div class="flex items-center gap-4 group cursor-help">
+<div class="h-px w-8 bg-primary"></div>
+<div class="rotate-45 size-20 border-2 border-slate-500 flex items-center justify-center group-hover:border-primary transition-colors">
+<div class="-rotate-45 text-[10px] font-bold text-slate-100">SENDS</div>
+</div>
+<div class="h-px w-8 bg-primary"></div>
+</div>
+</div>
+<!-- Message Entity -->
+<div class="flex flex-col items-center gap-4">
+<div class="bg-primary/20 border-2 border-primary px-8 py-6 rounded shadow-[0_0_20px_rgba(17,50,212,0.2)] min-w-[160px]">
+<p class="text-primary font-black text-center text-lg">MESSAGE</p>
+<div class="mt-2 h-px bg-primary/30 w-full"></div>
+<p class="text-[10px] text-slate-300 mt-2 text-center uppercase tracking-tighter">Msg_ID (PK)<br/>Content<br/>Time<br/>Medium</p>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<p class="text-slate-500 text-xs font-mono">-- Note: Relationship "CHARACTER &lt;-&gt; BODY_SWAP &lt;-&gt; CHARACTER" denotes a recursive M:N link --</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-primary/10 bg-background-dark py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-2xl">all_inclusive</span>
+<p class="text-sm font-bold tracking-widest uppercase">Project Musubi</p>
+</div>
+<div class="flex gap-8 text-slate-500 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Documentation</a>
+<a class="hover:text-primary transition-colors" href="#">Entity List</a>
+<a class="hover:text-primary transition-colors" href="#">SQL Export</a>
+</div>
+<p class="text-slate-600 text-[10px] uppercase font-bold tracking-widest">© 2024 Storyboard ER Systems</p>
+</div>
+</footer>
+</div>
+</body></html>

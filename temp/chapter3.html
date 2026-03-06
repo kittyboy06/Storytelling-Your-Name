@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chapter 3: The Comet &amp; The Disaster</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1132d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101322",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-primary/20 px-6 md:px-20 lg:px-40 py-4 bg-background-light dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">auto_graph</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Your Name ER-Diagram</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Chapter 1</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Chapter 2</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="#">Chapter 3</a>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-200 dark:bg-primary/20 text-slate-900 dark:text-white hover:bg-primary/30 transition-all">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-6 md:px-20 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Hero Section -->
+<div class="@container mb-8">
+<div class="@[480px]:py-3">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[400px] relative border border-primary/20 shadow-2xl shadow-primary/10" data-alt="A comet splitting into pieces falling through a dark starry sky" style='background-image: linear-gradient(to top, rgba(16, 19, 34, 1) 0%, rgba(16, 19, 34, 0.4) 50%, rgba(16, 19, 34, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD80J7M-93V99m0hili-BMSLt6qw2VrOFZZjfgGw9G4qQXd4heMo1RmStmIL75PqKbKeO8DqNn65_Mf0FpaP-4pCbyl8mR0GBwA6kDfIA6tQM-5BFSbxCZ-WH6bhnb81niHegQqRiC4rLzeHxTyGTkt4VeucGS08PM0gLA9-cF61sI8yJxo_jqYdfiBrSPWMUGIvFqv5vivgxCDJAVATMoNbuBwQYBhQujsDmOgAockGtQ10vgESZNGPz_klmxUBC_iCtJFv0umwSVZ");'>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent pointer-events-none"></div>
+<div class="flex flex-col p-8 z-10">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-2">The Culmination</span>
+<h1 class="text-white tracking-tight text-4xl md:text-5xl font-extrabold leading-tight">Section 3: The Comet &amp; The Disaster</h1>
+<p class="text-slate-300 mt-2 text-lg">(1:M Event Relationship Analysis)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Narrative Text -->
+<div class="px-4 py-6 bg-primary/5 rounded-xl border-l-4 border-primary mb-10">
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed text-lg italic">
+                            "The festive lights of the Itomori Autumn Festival were eclipsed in an instant. As the Tiamat Comet split, beauty turned to tragedy. In our database schema, this moment represents a critical temporal pivot where one astronomical entity triggers multiple devastating events."
+                        </p>
+</div>
+<!-- Two Column Section: Entity Details -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+<!-- Comet Entity -->
+<div class="bg-white dark:bg-primary/10 p-6 rounded-xl border border-slate-200 dark:border-primary/20">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary bg-primary/20 p-2 rounded-lg">orbit</span>
+<h2 class="text-slate-900 dark:text-white text-2xl font-bold">Comet Entity Details</h2>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Entity Name</p>
+<p class="text-slate-900 dark:text-white font-semibold">Tiamat Comet</p>
+</div>
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Appearance Date</p>
+<p class="text-slate-900 dark:text-white font-semibold">October 4, 2013</p>
+</div>
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Impact Details</p>
+<p class="text-slate-900 dark:text-white font-semibold">Nucleus split, Itomori impact</p>
+</div>
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Relationship</p>
+<span class="px-2 py-1 bg-primary text-white text-xs rounded-full font-bold">CAUSES (1:M)</span>
+</div>
+</div>
+</div>
+<!-- Disaster Event -->
+<div class="bg-white dark:bg-primary/10 p-6 rounded-xl border border-slate-200 dark:border-primary/20">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-red-500 bg-red-500/20 p-2 rounded-lg">warning</span>
+<h2 class="text-slate-900 dark:text-white text-2xl font-bold">The Disaster Event</h2>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Event Type</p>
+<p class="text-slate-900 dark:text-white font-semibold uppercase tracking-wider">Major Impact</p>
+</div>
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Location</p>
+<div class="flex items-center gap-1 text-slate-900 dark:text-white font-semibold">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Itomori Town</span>
+</div>
+</div>
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Fatality Record</p>
+<p class="text-slate-900 dark:text-white font-semibold">500+ (Initial Timeline)</p>
+</div>
+<div class="flex justify-between items-center border-b border-slate-100 dark:border-primary/10 pb-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Relationship</p>
+<span class="px-2 py-1 bg-slate-600 text-white text-xs rounded-full font-bold uppercase">OCCURS_AT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ER Logic Visualization -->
+<div class="mb-12">
+<h2 class="text-slate-900 dark:text-white text-2xl font-bold mb-6 px-4">ER Logic Visualization</h2>
+<div class="bg-white dark:bg-slate-900/50 p-10 rounded-2xl border-2 border-dashed border-primary/30 flex flex-col md:flex-row items-center justify-around gap-8">
+<!-- Entity: Comet -->
+<div class="flex flex-col items-center group">
+<div class="w-32 h-20 bg-primary/20 border-2 border-primary rounded flex items-center justify-center group-hover:bg-primary/30 transition-all">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">COMET</span>
+</div>
+<p class="text-xs mt-2 text-slate-500">Strong Entity</p>
+</div>
+<!-- Relationship: Causes -->
+<div class="flex flex-col items-center flex-1">
+<div class="w-full flex items-center">
+<div class="h-[2px] bg-primary flex-1"></div>
+<div class="w-24 h-12 border-2 border-primary rotate-45 flex items-center justify-center bg-background-light dark:bg-background-dark -mx-6">
+<span class="text-[10px] -rotate-45 font-bold text-primary">CAUSES</span>
+</div>
+<div class="h-[2px] bg-primary flex-1 relative">
+<span class="absolute right-0 -top-6 text-primary font-bold text-lg">M</span>
+<div class="absolute right-0 -top-1 w-2 h-2 border-r-2 border-t-2 border-primary rotate-45"></div>
+</div>
+</div>
+<p class="text-xs mt-4 text-primary font-medium">1:Many Cardinality</p>
+</div>
+<!-- Entity: Event -->
+<div class="flex flex-col items-center group">
+<div class="w-32 h-20 bg-red-500/10 border-2 border-red-500 rounded flex items-center justify-center group-hover:bg-red-500/20 transition-all">
+<span class="text-red-500 font-bold text-sm tracking-widest uppercase">EVENT</span>
+</div>
+<p class="text-xs mt-2 text-slate-500">Dependent Entity</p>
+</div>
+<!-- Relationship: Occurs At -->
+<div class="flex flex-col items-center flex-1">
+<div class="w-full flex items-center">
+<div class="h-[2px] bg-slate-400 flex-1"></div>
+<div class="w-16 h-8 border border-slate-400 rotate-45 flex items-center justify-center bg-background-light dark:bg-background-dark -mx-4">
+<span class="text-[8px] -rotate-45 font-medium text-slate-500 uppercase">at</span>
+</div>
+<div class="h-[2px] bg-slate-400 flex-1 relative">
+<div class="absolute right-0 -top-1 w-2 h-2 border-r-2 border-t-2 border-slate-400 rotate-45"></div>
+</div>
+</div>
+</div>
+<!-- Entity: Location -->
+<div class="flex flex-col items-center group">
+<div class="w-32 h-20 bg-slate-500/10 border-2 border-slate-500 rounded flex items-center justify-center group-hover:bg-slate-500/20 transition-all">
+<span class="text-slate-500 font-bold text-sm tracking-widest uppercase">LOCATION</span>
+</div>
+<p class="text-xs mt-2 text-slate-500">Static Context</p>
+</div>
+</div>
+</div>
+<!-- CTA / Navigation Footer -->
+<div class="flex justify-between items-center pt-10 border-t border-slate-200 dark:border-primary/20">
+<button class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-bold">Chapter 2</span>
+</button>
+<button class="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/80 transition-all shadow-lg shadow-primary/30">
+<span class="font-bold">Enter Chapter 4: The Swap</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Map Reference (Data attribute as requested) -->
+<div class="hidden" data-location="Itomori, Gifu, Japan" style=""></div>
+</div>
+</div>
+</body></html>
